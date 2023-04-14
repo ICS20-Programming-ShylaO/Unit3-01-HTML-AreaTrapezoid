@@ -9,14 +9,14 @@
  * This function calculates the area of a trapezoid.
  */
 function calculateArea () {
-  // input
+  // get side a, b, and height from user
   let sideA = parseFloat(document.getElementById('side-a-trapezoid').value);
   let sideB = parseFloat(document.getElementById('side-b-trapezoid').value);
   let height = parseFloat(document.getElementById('height-trapezoid').value);
 
-  // process
+  // calculate area of a trapezoid
   let area = (sideA + sideB) * height / 2;
 
-  // output
+  // display area to user
   document.getElementById('area').innerHTML = 'Area is: ' + area.toFixed(2) + ' cm<sup>2</sup>.'
 }
